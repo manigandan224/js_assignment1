@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>my website</title>
+</head>
+<body>
+<script type="text/javascript">
+var d=new Date();
+var a=new Array(7);
+a[0]="Suday";
+a[1]="Monday";
+a[2]="Tuesday";
+a[3]="Wednesday";
+a[4]="Thursday";
+a[5]="Friday";
+a[6]="Saturday";
+document.write("Today is : "+a[d.getDay()]);
+document.write("<br>");
+var h=d.getHours();
+var time;
+if(h==12){
+time=h + " PM"+" : "+d.getMinutes()+" : "+d.getSeconds();
+}
+else{
+time=h>12 ? h-12 +h+" PM"+" : "+d.getMinutes()+" : "+d.getSeconds() : h+" AM"+" : "+d.getMinutes()+" : "+d.getSeconds();
+}
+document.write("Current time is : "+time);
+</script>
+</body>
+</html>
